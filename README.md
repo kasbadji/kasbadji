@@ -31,15 +31,3 @@
 </p>
 
 ---
-
-## GitHub Achievements
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=kasbadji&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4" />
-</p>
-
----
-
-## Profile Views
-<p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=kasbadji&color=6&icon=0" />
-</p>
