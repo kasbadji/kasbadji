@@ -20,11 +20,9 @@
   <img src="https://github-readme-stats.vercel.app/api?username=kasbadji&theme=tokyonight&show_icons=true&hide_border=true" />
 </p>
 
-### Languages
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kasbadji&theme=tokyonight
-" />
-</p>
+### 📊 GitHub Metrics
+![Metrics](https://github.com/kasbadji/kasbadji/blob/main/github-metrics.svg)
+
 
 
 ---
