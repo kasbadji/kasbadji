@@ -22,7 +22,8 @@
 
 ### Languages
 <p align="center">
-  <img src="https://github-readme-stats-godkingjay.vercel.app/api/top-langs/?username=kasbadji&layout=compact&theme=tokyonight" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kasbadji&theme=tokyonight
+" />
 </p>
 
 
