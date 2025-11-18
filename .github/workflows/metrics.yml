@@ -1,5 +1,7 @@
 name: Metrics
 on:
+  schedule:
+    - cron: "0 */12 * * *"   # Update every 12 hours
   workflow_dispatch:
 
 jobs:
@@ -8,7 +10,15 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
+
+          # Plugins you want
+          base: header, activity, community, repositories
           plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_colors: github
+          plugin_languages_threshold: 2%
+          plugin_languages_limit: 10
+
+          plugin_followup: yes
+          plugin_followup_sections: user
