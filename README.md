@@ -8,7 +8,7 @@
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,mui" />
   <img src="https://skillicons.dev/icons?i=nodejs,express,prisma" />
   <img src="https://skillicons.dev/icons?i=postgres,mongodb" />
-  <img src="https://skillicons.dev/icons?i=php,java,c,linux,markdown" />
+  <img src="https://skillicons.dev/icons?i=php,java,c,linux,markdown,git" />
 </p>
 
 ---
