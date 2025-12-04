@@ -13,14 +13,7 @@
 
 ---
 
-## GitHub Stats
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=kasbadji&show_icons=true&theme=tokyonight" />
-</p>
-
----
-
-## 📈 GitHub Activity Graph
+## GitHub Activity Graph
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=kasbadji&theme=tokyo-night" />
 </p>
