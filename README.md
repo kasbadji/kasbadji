@@ -20,6 +20,13 @@
 
 ---
 
+## Isometric Commit Calendar
+<p align="center">
+  <img src="https://github.com/kasbadji/kasbadji/blob/main/github-metrics-isometric.svg" />
+</p>
+
+---
+
 ## GitHub Metrics
 <p align="center">
   <img src="https://github.com/kasbadji/kasbadji/blob/main/github-metrics.svg" />
