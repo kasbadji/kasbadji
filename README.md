@@ -5,10 +5,10 @@
 
 ## Tech Stack
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,mui" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,mui,Dart,flutter" />
   <img src="https://skillicons.dev/icons?i=nodejs,express,prisma" />
   <img src="https://skillicons.dev/icons?i=postgres,mongodb" />
-  <img src="https://skillicons.dev/icons?i=php,java,c,linux,markdown,obsidian,git" />
+  <img src="https://skillicons.dev/icons?i=php,java,c,markdown,obsidian,git,linux" />
 </p>
 
 ---
