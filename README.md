@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,mui,dart,flutter" />
   <img src="https://skillicons.dev/icons?i=nodejs,express,prisma" />
-  <img src="https://skillicons.dev/icons?i=postgres,mongodb,docker,neon,railway,vercel" />
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,docker,Neon,Railway,vercel" />
   <img src="https://skillicons.dev/icons?i=php,java,c,markdown,obsidian,git,linux,kali,arch" />
 </p>
 
