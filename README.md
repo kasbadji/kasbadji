@@ -5,7 +5,7 @@
 
 ## Tech Stack
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,mui,dart,flutter" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,nextjs,mui,flutter" />
   <img src="https://skillicons.dev/icons?i=express,prisma" />
   <img src="https://skillicons.dev/icons?i=postgres,mongodb,firebase,supabase" />
   <img src="https://skillicons.dev/icons?i=python" />
