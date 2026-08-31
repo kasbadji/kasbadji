@@ -14,13 +14,6 @@
 
 ---
 
-## GitHub Activity Graph
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kasbadji&theme=tokyo-night" />
-</p>
-
----
-
 ## GitHub Metrics
 <p align="center">
   <img src="https://github.com/kasbadji/kasbadji/blob/main/github-metrics.svg" />
