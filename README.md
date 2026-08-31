@@ -12,7 +12,6 @@
   <img src="https://skillicons.dev/icons?i=php,java,c,markdown,linux,kali,arch" />
 </p>
 
----
 
 ## GitHub Metrics
 <p align="center">
