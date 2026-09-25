@@ -12,11 +12,6 @@
   <img src="https://skillicons.dev/icons?i=php,java,c,markdown,linux,kali,arch" />
 </p>
 
----
-## GitHub Activity Graph
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kasbadji&theme=tokyo-night" />
-</p>
 
 ## GitHub Metrics
 <p align="center">
