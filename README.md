@@ -12,7 +12,10 @@
   <img src="https://skillicons.dev/icons?i=php,java,c,markdown,linux,arch" />
 </p>
 
----
+## GitHub Metrics
+<p align="center">
+  <img src="https://github.com/kasbadji/kasbadji/blob/main/github-metrics-lines.svg" />
+</p>
 <p align="center">
   <img src="https://github.com/kasbadji/kasbadji/blob/main/github-metrics.svg" />
 </p>
