@@ -7,10 +7,12 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
-      # 1. Main metrics (Existing)
+      # 1. Vos métriques principales (conservées)
       - name: Main metrics
         uses: lowlighter/metrics@latest
         with:
@@ -21,7 +23,7 @@ jobs:
           plugin_languages_ignored: html, css
           plugin_languages_details: percentage
 
-      # 2. Isometric commit calendar (Existing)
+      # 2. Calendrier isométrique (conservé)
       - name: Isometric commit calendar
         uses: lowlighter/metrics@latest
         with:
@@ -31,15 +33,21 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-      # 3. Daily Commit Chart (NEW)
-      - name: Daily Commit Activity Graph
-        uses: lowlighter/metrics@latest
+      # 3. Graphique des commits par jour (remplace le plugin habits pour éviter l'erreur)
+      - name: Generate Activity Graph
+        uses: Ashutosh0887/github-readme-activity-graph@v1.2.9
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          filename: github-metrics-habits.svg
-          base: ""
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_charts: yes
-          plugin_habits_charts_type: classic
+          token: ${{ secrets.GITHUB_TOKEN }}
+          output_filename: github-metrics-habits.svg
+          theme: react
+          area: true
+          hide_border: true
+
+      # 4. Commit du fichier SVG généré
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add github-metrics-habits.svg
+          git commit -m "Update activity graph" || exit 0
+          git push
