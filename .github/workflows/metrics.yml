@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 1. Métriques principales (lowlighter)
+      # 1. Main metrics (lowlighter)
       - name: Main metrics
         uses: lowlighter/metrics@latest
         with:
@@ -23,7 +23,7 @@ jobs:
           plugin_languages_ignored: html, css
           plugin_languages_details: percentage
 
-      # 2. Calendrier isométrique (lowlighter)
+      # 2. Isometric commit calendar (lowlighter)
       - name: Isometric commit calendar
         uses: lowlighter/metrics@latest
         with:
@@ -33,21 +33,21 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-      # 3. Graphique d'activité quotidien (Action officielle Ashutosh0887)
+      # 3. Daily Commit Activity Graph
       - name: Generate Activity Graph
-        uses: Ashutosh0887/github-readme-activity-graph@main
+        uses: maurodesouza/github-readme-activity-graph-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          output_filename: github-metrics-habits.svg
+          output_path: github-metrics-habits.svg
           theme: react
           area: true
           hide_border: true
 
-      # 4. Commit et push du SVG
+      # 4. Commit generated SVG back to main branch
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add github-metrics-habits.svg
-          git commit -m "Update activity graph" || exit 0
+          git commit -m "Update activity graph SVG" || exit 0
           git push
