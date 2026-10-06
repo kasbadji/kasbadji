@@ -51,10 +51,12 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-
+      
           git add github-metrics.svg
           git add github-metrics-isometric.svg
           git add github-metrics-habits.svg
-
+      
           git commit -m "Update GitHub metrics" || exit 0
+      
+          git pull --rebase origin main
           git push
