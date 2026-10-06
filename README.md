@@ -12,8 +12,10 @@
   <img src="https://skillicons.dev/icons?i=php,java,c,markdown,linux,arch" />
 </p>
 
-
 ## GitHub Metrics
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kasbadji&theme=react&area=true&hide_border=true" alt="Kasbadji's GitHub Activity Graph" />
+</p>
 <p align="center">
   <img src="https://github.com/kasbadji/kasbadji/blob/main/github-metrics.svg" />
 </p>
