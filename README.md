@@ -14,8 +14,8 @@
 
 ## GitHub Metrics
 <p align="center">
-  <img src="https://github.com/kasbadji/kasbadji/blob/main/github-metrics-lines.svg" />
+  <img src="https://raw.githubusercontent.com/kasbadji/kasbadji/main/github-metrics-isometric.svg" alt="Isometric Commit Calendar" />
 </p>
 <p align="center">
-  <img src="https://github.com/kasbadji/kasbadji/blob/main/github-metrics.svg" />
+  <img src="https://raw.githubusercontent.com/kasbadji/kasbadji/main/github-metrics.svg" alt="GitHub Metrics" />
 </p>
