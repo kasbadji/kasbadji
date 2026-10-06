@@ -1,4 +1,5 @@
 name: Metrics
+
 on:
   schedule:
     - cron: "0 * * * *"
@@ -7,12 +8,15 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
-    steps:
-      - uses: actions/checkout@v4
 
-      # 1. Main metrics (lowlighter)
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 1. Main metrics
       - name: Main metrics
         uses: lowlighter/metrics@latest
         with:
@@ -23,7 +27,7 @@ jobs:
           plugin_languages_ignored: html, css
           plugin_languages_details: percentage
 
-      # 2. Isometric commit calendar (lowlighter)
+      # 2. Isometric commit calendar
       - name: Isometric commit calendar
         uses: lowlighter/metrics@latest
         with:
@@ -33,21 +37,24 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-      # 3. Daily Commit Activity Graph
+      # 3. Daily activity graph
       - name: Generate Activity Graph
-        uses: maurodesouza/github-readme-activity-graph-action@v2
+        uses: maurodesouza/github-readme-activity-graph-action@v1
         with:
+          username: kasbadji
           token: ${{ secrets.GITHUB_TOKEN }}
           output_path: github-metrics-habits.svg
-          theme: react
-          area: true
-          hide_border: true
+          options: theme=react&area=true&hide_border=true&days=30
 
-      # 4. Commit generated SVG back to main branch
+      # 4. Commit generated SVG files
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+
+          git add github-metrics.svg
+          git add github-metrics-isometric.svg
           git add github-metrics-habits.svg
-          git commit -m "Update activity graph SVG" || exit 0
+
+          git commit -m "Update GitHub metrics" || exit 0
           git push
