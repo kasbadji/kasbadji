@@ -12,10 +12,7 @@
   <img src="https://skillicons.dev/icons?i=php,java,c,markdown,linux,arch" />
 </p>
 
-## GitHub Metrics
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kasbadji&theme=dark&hide_border=true" alt="Kasbadji GitHub Streak" />
-</p>
+---
 <p align="center">
   <img src="https://github.com/kasbadji/kasbadji/blob/main/github-metrics.svg" />
 </p>
