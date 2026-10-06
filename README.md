@@ -14,7 +14,7 @@
 
 ## GitHub Metrics
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kasbadji&theme=react&area=true&hide_border=true" alt="Kasbadji's GitHub Activity Graph" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kasbadji&theme=dark&hide_border=true" alt="Kasbadji GitHub Streak" />
 </p>
 <p align="center">
   <img src="https://github.com/kasbadji/kasbadji/blob/main/github-metrics.svg" />
