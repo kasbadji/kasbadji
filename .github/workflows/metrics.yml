@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 1. Vos métriques principales (conservées)
+      # 1. Métriques principales (lowlighter)
       - name: Main metrics
         uses: lowlighter/metrics@latest
         with:
@@ -23,7 +23,7 @@ jobs:
           plugin_languages_ignored: html, css
           plugin_languages_details: percentage
 
-      # 2. Calendrier isométrique (conservé)
+      # 2. Calendrier isométrique (lowlighter)
       - name: Isometric commit calendar
         uses: lowlighter/metrics@latest
         with:
@@ -33,9 +33,9 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-      # 3. Graphique des commits par jour (remplace le plugin habits pour éviter l'erreur)
+      # 3. Graphique d'activité quotidien (Action officielle Ashutosh0887)
       - name: Generate Activity Graph
-        uses: Ashutosh0887/github-readme-activity-graph@v1.2.9
+        uses: Ashutosh0887/github-readme-activity-graph@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           output_filename: github-metrics-habits.svg
@@ -43,7 +43,7 @@ jobs:
           area: true
           hide_border: true
 
-      # 4. Commit du fichier SVG généré
+      # 4. Commit et push du SVG
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
