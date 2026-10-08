@@ -12,7 +12,6 @@
   <img src="https://skillicons.dev/icons?i=php,java,c,markdown,linux,arch" />
 </p>
 
----
 ## GitHub Metrics
 <p align="center">
   <img src="https://raw.githubusercontent.com/kasbadji/kasbadji/main/github-metrics-habits.svg" alt="Daily Commit Activity Graph" />
